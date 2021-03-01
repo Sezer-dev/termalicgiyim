@@ -38,7 +38,7 @@
 export default {}
 </script>
 
-<style>
+<style scoped>
 .about-img {
   position: absolute;
   top: -150px;
