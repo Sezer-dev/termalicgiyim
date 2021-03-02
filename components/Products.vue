@@ -5,28 +5,15 @@
         <slide
           v-for="(slide, i) in slides"
           :key="i"
-          :style="{
-            width: '300px',
-            height: '370px',
-            border: 'none'
-          }"
           :index="i"
-          class="bg-white shadow-sm"
+          class="bg-white shadow-sm faq-slide-container"
         >
           <div
-            :style="{
-              backgroundImage: `url('${slide.url}')`,
-              width: '100%',
-              height: '370px',
-              backgroundSize: 'auto 330px',
-              backgroundRepeat: 'no-repeat',
-              backgroundPosition: '50% 0'
-            }"
-            class="d-flex align-items-end justify-content-center"
+            :style="{ backgroundImage: `url('${slide.url}')` }"
+            class="d-flex align-items-end w-100 justify-content-center faq-slide-bg"
           >
             <div
-              :style="{ height: '40px' }"
-              class="d-flex justify-content-center w-100 align-items-center"
+              class="d-flex justify-content-center w-100 align-items-center faq-slide-text"
             >
               <p
                 class="text-nowrap m-0 h-100 w-100 d-flex align-items-center justify-content-center"
@@ -87,4 +74,18 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+.faq-slide-container {
+  width: 300px;
+  height: 370px;
+  border: none;
+}
+.faq-slide-bg {
+  background-size: auto 330px;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}
+.faq-slide-text {
+  height: 40px;
+}
+</style>
