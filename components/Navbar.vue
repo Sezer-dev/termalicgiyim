@@ -16,14 +16,19 @@
         <ul
           class="d-flex flex-md-row flex-column text-md-left text-center justify-content-center align-self-center"
         >
-          <li
-            v-for="link in links"
-            :key="link.id"
-          >
-            <NuxtLink v-if="link.external" :to="{path: link.path}" class="pl-3 pt-md-0 pt-1 font-weight-bold">
+          <li v-for="link in links" :key="link.id">
+            <NuxtLink
+              v-if="link.external"
+              :to="{ path: link.path }"
+              class="pl-3 pt-md-0 pt-1 font-weight-bold"
+            >
               {{ link.name }}
             </NuxtLink>
-            <a v-else :href="link.path" class="pl-3 pt-md-0 pt-1 font-weight-bold">
+            <a
+              v-else
+              :href="link.path"
+              class="pl-3 pt-md-0 pt-1 font-weight-bold"
+            >
               {{ link.name }}
             </a>
           </li>
@@ -35,43 +40,43 @@
 
 <script>
 export default {
-  data () {
+  data() {
     return {
       links: [
         {
           id: 0,
-          name: 'Ana Sayfa',
-          path: '/',
-          external: 'false'
+          name: "Ana Sayfa",
+          path: "/",
+          external: "false"
         },
         {
           id: 1,
-          name: 'Hakkımızda',
-          path: '#about',
-          external: 'false'
+          name: "Hakkımızda",
+          path: "#about",
+          external: "false"
         },
         {
           id: 2,
-          name: 'Online Satış',
-          path: 'https://icgiyim.com/',
-          external: 'true'
+          name: "Online Satış",
+          path: "https://icgiyim.com/",
+          external: "true"
         },
         {
           id: 3,
-          name: 'İletişim',
-          path: '#contact',
-          external: 'false'
+          name: "İletişim",
+          path: "#contact",
+          external: "false"
         },
         {
           id: 4,
-          name: 'English',
-          path: 'https://thermaluwear.com/',
-          external: 'true'
+          name: "English",
+          path: "https://thermaluwear.com/",
+          external: "true"
         }
       ]
-    }
+    };
   }
-}
+};
 </script>
 
 <style></style>

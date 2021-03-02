@@ -23,22 +23,23 @@ body {
   height: 50px;
 }
 
-img{
+img {
   border-style: none;
 }
 
-a.nuxt-link-exact-active, a{
+a.nuxt-link-exact-active,
+a {
   text-decoration: none !important;
   color: #3a3a3a !important;
 }
 
-small{
+small {
   font-size: xx-small !important;
 }
 
-ul{
+ul {
   list-style: none;
-  padding:0 !important;
+  padding: 0 !important;
   margin: 0 !important;
 }
 </style>

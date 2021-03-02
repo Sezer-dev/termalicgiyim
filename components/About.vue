@@ -17,7 +17,7 @@
           src="../assets/yunuzundon.png"
           alt="About Image"
           class="about-img"
-        >
+        />
       </div>
       <div
         class="col-md-9 col-12 order-md-2 order-1 h-100 d-flex flex-column justify-content-center"
@@ -37,7 +37,7 @@
 </template>
 
 <script>
-export default {}
+export default {};
 </script>
 
 <style scoped>
