@@ -8,13 +8,16 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
-    "lint": "npm run lint:js"
+    "lint": "npm run lint:js",
+    "check": "prettier --check \"{components,layouts,pages}/**/*.vue\" \"plugins/**.js\" \"nuxt.config.js\"",
+    "write": "prettier --write \"{components,layouts,pages}/**/*.vue\" \"plugins/**.js\" \"nuxt.config.js\""
   },
   "dependencies": {
     "bootstrap": "^4.6.0",
     "bootstrap-vue": "^2.21.2",
     "core-js": "^3.8.3",
-    "nuxt": "^2.14.12"
+    "nuxt": "^2.14.12",
+    "vue-carousel-3d": "^1.0.1"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^5.0.0",
@@ -22,6 +25,8 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^7.18.0",
     "eslint-plugin-nuxt": "^2.0.0",
-    "eslint-plugin-vue": "^7.5.0"
+    "eslint-plugin-vue": "^7.5.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4"
   }
 }
