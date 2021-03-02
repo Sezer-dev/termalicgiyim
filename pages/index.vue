@@ -3,6 +3,7 @@
     <Hero />
     <About />
     <Products />
+    <FAQ />
   </div>
 </template>
 
