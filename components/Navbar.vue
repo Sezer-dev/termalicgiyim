@@ -39,7 +39,14 @@
 </template>
 
 <script>
+import { VBToggle, BCollapse } from "bootstrap-vue";
 export default {
+  components: {
+    "b-collapse": BCollapse
+  },
+  directives: {
+    "b-toggle": VBToggle
+  },
   data() {
     return {
       links: [
