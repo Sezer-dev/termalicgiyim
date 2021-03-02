@@ -14,9 +14,9 @@
         class="navbar-collapse collapse flex-grow-0"
       >
         <ul
-          class="d-flex flex-md-row flex-column text-md-left text-center justify-content-center align-self-center"
+          class="d-flex flex-md-row flex-column text-md-left text-center justify-content-center m-0"
         >
-          <li v-for="link in links" :key="link.id">
+          <li v-for="(link, index) in links" :key="index">
             <NuxtLink
               v-if="link.external"
               :to="{ path: link.path }"
@@ -41,6 +41,7 @@
 <script>
 import { VBToggle, BCollapse } from "bootstrap-vue";
 export default {
+  name: "NavigationBar",
   components: {
     "b-collapse": BCollapse
   },
@@ -51,31 +52,26 @@ export default {
     return {
       links: [
         {
-          id: 0,
           name: "Ana Sayfa",
           path: "/",
           external: "false"
         },
         {
-          id: 1,
           name: "Hakkımızda",
           path: "#about",
           external: "false"
         },
         {
-          id: 2,
           name: "Online Satış",
           path: "https://icgiyim.com/",
           external: "true"
         },
         {
-          id: 3,
           name: "İletişim",
           path: "#contact",
           external: "false"
         },
         {
-          id: 4,
           name: "English",
           path: "https://thermaluwear.com/",
           external: "true"
@@ -86,4 +82,13 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+a.nuxt-link-exact-active,
+a {
+  text-decoration: none !important;
+  color: #3a3a3a !important;
+}
+ul {
+  list-style: none;
+}
+</style>
