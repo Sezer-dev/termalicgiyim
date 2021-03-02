@@ -18,19 +18,11 @@
         </div>
       </div>
       <div class="col-md-3 col-sm-12 h-100 d-flex">
-        <img
-          src="../assets/herowoman.png"
-          alt="Hero Image"
-          class="hero-image"
-        />
+        <img src="~/assets/herowoman.png" alt="Hero Image" class="hero-image" />
       </div>
     </div>
   </main>
 </template>
-
-<script>
-export default {};
-</script>
 
 <style scoped>
 .hero {

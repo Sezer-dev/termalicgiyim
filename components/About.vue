@@ -14,7 +14,7 @@
       </div>
       <div class="col-md-3 col-12 order-md-1 order-2 d-flex h-100">
         <img
-          src="../assets/yunuzundon.png"
+          src="~/assets/yunuzundon.png"
           alt="About Image"
           class="about-img"
         />
@@ -35,10 +35,6 @@
     </div>
   </main>
 </template>
-
-<script>
-export default {};
-</script>
 
 <style scoped>
 .about-img {
