@@ -1,26 +1,30 @@
 <template>
   <main class="container my-5">
     <client-only>
-      <carousel-3d :style="{ height: '370px' }" :autoplay="true">
+      <carousel-3d
+        :width="300"
+        :height="370"
+        :autoplay="true"
+        :autoplay-hover-pause="true"
+        :border="0"
+        :perspective="20"
+      >
         <slide
           v-for="(slide, i) in slides"
           :key="i"
           :index="i"
-          class="bg-white shadow-sm faq-slide-container"
+          class="bg-white shadow-sm faq-slide-container carousel"
         >
-          <div
-            :style="{ backgroundImage: `url('${slide.url}')` }"
-            class="d-flex align-items-end w-100 justify-content-center faq-slide-bg"
-          >
+          <div class="d-flex w-100 flex-column">
             <div
-              class="d-flex justify-content-center w-100 align-items-center faq-slide-text"
+              :style="{ backgroundImage: `url('${slide.url}')` }"
+              class="faq-slide-bg d-flex justify-content-center w-100 align-items-center"
+            ></div>
+            <p
+              class="faq-slide-text text-nowrap m-0 w-100 d-flex justify-content-center align-items-center"
             >
-              <p
-                class="text-nowrap m-0 h-100 w-100 d-flex align-items-center justify-content-center"
-              >
-                {{ slide.name }}
-              </p>
-            </div>
+              {{ slide.name }}
+            </p>
           </div>
         </slide>
       </carousel-3d>
@@ -75,12 +79,13 @@ export default {
 </script>
 
 <style scoped>
-.faq-slide-container {
-  width: 300px;
+.carousel {
+  width: 250px;
   height: 370px;
-  border: none;
 }
 .faq-slide-bg {
+  width: 100%;
+  height: 330px;
   background-size: auto 330px;
   background-repeat: no-repeat;
   background-position: 50% 0;
