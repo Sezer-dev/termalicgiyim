@@ -1,5 +1,5 @@
 <template>
-  <main id="contact" class="container bg-white mt-5 p-5">
+  <main id="contact" class="container bg-white mt-5 p-md-5 p-4">
     <div class="row">
       <div class="col-12 d-flex justify-content-md-end justify-content-center">
         <div>
