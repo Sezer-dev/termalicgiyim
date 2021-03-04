@@ -5,5 +5,6 @@
     <About />
     <Products />
     <FAQ />
+    <Contact />
   </div>
 </template>
