@@ -17,20 +17,20 @@
           class="d-flex flex-md-row flex-column text-md-left text-center justify-content-center m-0"
         >
           <li v-for="(link, index) in links" :key="index">
-            <NuxtLink
-              v-if="link.external"
-              :to="{ path: link.path }"
-              class="pl-3 pt-md-0 pt-1 font-weight-bold"
-            >
-              {{ link.name }}
-            </NuxtLink>
             <a
-              v-else
+              v-if="link.external"
               :href="link.path"
               class="pl-3 pt-md-0 pt-1 font-weight-bold"
             >
               {{ link.name }}
             </a>
+            <NuxtLink
+              v-else
+              :to="{ path: link.path }"
+              class="pl-3 pt-md-0 pt-1 font-weight-bold"
+            >
+              {{ link.name }}
+            </NuxtLink>
           </li>
         </ul>
       </b-collapse>
@@ -54,27 +54,27 @@ export default {
         {
           name: "Ana Sayfa",
           path: "/",
-          external: "false"
+          external: false
         },
         {
           name: "Hakkımızda",
           path: "#about",
-          external: "false"
+          external: false
         },
         {
           name: "Online Satış",
           path: "https://icgiyim.com/",
-          external: "true"
+          external: true
         },
         {
           name: "İletişim",
           path: "#contact",
-          external: "false"
+          external: false
         },
         {
           name: "English",
           path: "https://thermaluwear.com/",
-          external: "true"
+          external: true
         }
       ]
     };
