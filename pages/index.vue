@@ -6,5 +6,6 @@
     <Products />
     <FAQ />
     <Contact />
+    <Footer />
   </div>
 </template>
