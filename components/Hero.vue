@@ -5,19 +5,19 @@
   >
     <div class="row">
       <div class="col-md-9 d-flex flex-column align-self-center">
-        <div class="d-flex align-self-start w-50 mb-5">
-          <h4 class="font-weight-bold text-grey">
+        <div class="w-50 mb-5">
+          <h4 class="font-weight-bold">
             Termal iç giyim koleksiyonumuz ile soğuktan uzak durun.
           </h4>
         </div>
-        <div class="d-flex align-self-end w-50 mb-5">
-          <h4 class="font-weight-bold text-grey">
+        <div class="d-flex align-self-end w-50">
+          <h4 class="font-weight-bold">
             Akıllı termal kumaşlar ısıyı kilitler, böylece en zorlu kış
             koşullarında bile sıcacık kalırsınız.
           </h4>
         </div>
       </div>
-      <div class="col-md-3 col-sm-12 h-100 d-flex">
+      <div class="col-md-3 col-sm-12 h-100">
         <img src="~/assets/herowoman.png" alt="Hero Image" class="hero-image" />
       </div>
     </div>
@@ -34,5 +34,15 @@
 .hero-image {
   position: absolute;
   height: 130%;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero-image {
+    height: 300px;
+    top: -150px;
+  }
+  .hero {
+    min-height: 360px;
+  }
 }
 </style>

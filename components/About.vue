@@ -6,13 +6,13 @@
     <div class="row">
       <div class="col-12 d-flex justify-content-md-end justify-content-center">
         <div class="d-flex flex-column align-self-end">
-          <h5 class="about-heading text-grey">
+          <h5 class="about-heading">
             HAKKIMIZDA
           </h5>
           <span class="line" />
         </div>
       </div>
-      <div class="col-md-3 col-12 order-md-1 order-2 d-flex h-100">
+      <div class="col-md-3 col-12 order-md-1 order-2 h-100">
         <img
           src="~/assets/yunuzundon.png"
           alt="About Image"
@@ -22,7 +22,7 @@
       <div
         class="col-md-9 col-12 order-md-2 order-1 h-100 d-flex flex-column justify-content-center"
       >
-        <p class="d-flex align-self-end w-md-100 w-75 about-p text-grey">
+        <p class="d-flex align-self-end w-md-100 w-75 about-p">
           1924 yılında Hüseyin Küçükaslan tarafından kurulan Termal İç Giyim
           kısa zamanda iç giyimde Türkiye’nin en önde gelen markası haline
           gelmiştir. İnovasyonu kendine vizyon edinmiş çalışanları ve
@@ -65,5 +65,18 @@
   height: 1px;
   width: 100%;
   display: block;
+}
+
+@media only screen and (max-width: 768px) {
+  .about-img {
+    height: 250px;
+    top: -250px;
+  }
+  .about-p {
+    font-size: 1rem;
+  }
+  .about {
+    min-height: 360px;
+  }
 }
 </style>
