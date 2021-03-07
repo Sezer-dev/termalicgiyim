@@ -7,7 +7,7 @@
       <div class="col-12 d-flex justify-content-md-end justify-content-center">
         <div class="d-flex flex-column align-self-end">
           <h5 class="about-heading">
-            HAKKIMIZDA
+            {{ $t("aboutus.title") }}
           </h5>
           <span class="line" />
         </div>
@@ -23,13 +23,7 @@
         class="col-md-9 col-12 order-md-2 order-1 h-100 d-flex flex-column justify-content-center"
       >
         <p class="d-flex align-self-end w-md-100 w-75 about-p">
-          1924 yılında Hüseyin Küçükaslan tarafından kurulan Termal İç Giyim
-          kısa zamanda iç giyimde Türkiye’nin en önde gelen markası haline
-          gelmiştir. İnovasyonu kendine vizyon edinmiş çalışanları ve
-          yöneticileri ile yün, termal ve pamuk içlikler, pijama ve boxer
-          çeşitleri, interlok pamuk-yün kumaş üretmektedir. Müşteri
-          memnuniyetinden ve kaliteden ödün vermeden çalışmak şirketin hizmet
-          anlayışının temelini oluşturur.
+          {{ this.$t("aboutus.text") }}
         </p>
       </div>
     </div>

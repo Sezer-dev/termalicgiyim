@@ -7,7 +7,7 @@
     </div>
     <div class="d-flex align-items-center my-3 my-md-0">
       <p class="font-weight-bold m-0 text-md-start text-center">
-        © Termal İç Giyim 2020 - Tüm hakları saklıdır.
+        {{ this.$t("footer.right") }}
       </p>
     </div>
     <div>
@@ -21,10 +21,6 @@
     </div>
   </footer>
 </template>
-
-<script>
-export default {};
-</script>
 
 <style scoped>
 a {

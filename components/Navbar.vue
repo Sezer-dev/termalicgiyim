@@ -52,29 +52,32 @@ export default {
     return {
       links: [
         {
-          name: "Ana Sayfa",
+          name: this.$t("navigations.home"),
           path: "/",
           external: false
         },
         {
-          name: "Hakkımızda",
+          name: this.$t("navigations.aboutus"),
           path: "#about",
           external: false
         },
         {
-          name: "Online Satış",
+          name: this.$t("navigations.onlineShopping"),
           path: "https://icgiyim.com/",
           external: true
         },
         {
-          name: "İletişim",
+          name: this.$t("navigations.contact"),
           path: "#contact",
           external: false
         },
         {
-          name: "English",
-          path: "https://thermaluwear.com/",
-          external: true
+          name: this.$i18n.locale === "tr" ? "English" : "Türkçe",
+          path:
+            this.$i18n.locale === "tr"
+              ? this.localePath("/", "en")
+              : this.localePath("/", "tr"),
+          external: false
         }
       ]
     };

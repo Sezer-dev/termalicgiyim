@@ -39,37 +39,37 @@ export default {
       slides: [
         {
           id: 0,
-          name: "Termal Uzun Kol T-Shirt",
+          name: this.$t("products.shirt"),
           url: "https://termalicgiyim.com/img/womenlongsleeve.jpg"
         },
         {
           id: 1,
-          name: "Termal Bere",
+          name: this.$t("products.beret"),
           url: "https://termalicgiyim.com/img/bere.jpg"
         },
         {
           id: 2,
-          name: "Termal Kısa Kol T-Shirt",
+          name: this.$t("products.t-shirt"),
           url: "https://termalicgiyim.com/img/yunkisakol.jpg"
         },
         {
           id: 3,
-          name: "Termal Kar Maskesi",
+          name: this.$t("products.mask"),
           url: "https://termalicgiyim.com/img/karmaskesi.jpg"
         },
         {
           id: 4,
-          name: "Termal Uzun Kol T-Shirt",
+          name: this.$t("products.shirt"),
           url: "https://termalicgiyim.com/img/DSC_8694.jpg"
         },
         {
           id: 5,
-          name: "Termal Boyunluk",
+          name: this.$t("products.collar"),
           url: "https://termalicgiyim.com/img/boyunluk.jpg"
         },
         {
           id: 6,
-          name: "Termal Sıfır Kol T-Shirt",
+          name: this.$t("products.athlet"),
           url: "https://termalicgiyim.com/img/DSC_8683.jpg"
         }
       ]

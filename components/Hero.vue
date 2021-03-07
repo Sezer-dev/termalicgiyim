@@ -7,13 +7,12 @@
       <div class="col-md-9 d-flex flex-column align-self-center">
         <div class="w-50 mb-5">
           <h4 class="font-weight-bold">
-            Termal iç giyim koleksiyonumuz ile soğuktan uzak durun.
+            {{ this.$t("hero.text1") }}
           </h4>
         </div>
         <div class="d-flex align-self-end w-50">
           <h4 class="font-weight-bold">
-            Akıllı termal kumaşlar ısıyı kilitler, böylece en zorlu kış
-            koşullarında bile sıcacık kalırsınız.
+            {{ this.$t("hero.text2") }}
           </h4>
         </div>
       </div>

@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-12 d-flex justify-content-md-end justify-content-center">
         <div>
-          <h5 class="contact-header text-gray">İLETİŞİM</h5>
+          <h5 class="contact-header text-gray">{{ $t("contact.title") }}</h5>
           <span class="line"></span>
         </div>
       </div>
@@ -15,13 +15,13 @@
             alt="contact image"
           />
           <h6 class="font-weight-bold my-4">
-            Toptan termal giyim alım talepleriniz için iletişime geçebilirsiniz.
+            {{ this.$t("contact.requests") }}
           </h6>
         </div>
       </div>
       <div class="col-md-6 col-12 pl-md-5 pt-xl-5">
         <div class="mt-xl-5 mt-md-4">
-          <h5>Adres</h5>
+          <h5>{{ this.$t("contact.adress") }}</h5>
           <p class="mb-0">Seyrantepe Mahallesi Yıldız Sokak No: 5</p>
           <p class="mt-0">Kağıthane / İstanbul</p>
         </div>
@@ -36,9 +36,9 @@
           </address>
           <address class="my-2">
             <b-icon-envelope font-scale="1.2" />
-            <a href="mailto:bilgi@kucukaslantekstil.com"
-              >bilgi@kucukaslantekstil.com</a
-            >
+            <a href="mailto:bilgi@kucukaslantekstil.com">
+              {{ this.$t("contact.infoMail") }}
+            </a>
           </address>
           <address class="my-2">
             <b-icon-envelope font-scale="1.2" />
