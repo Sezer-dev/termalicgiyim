@@ -3,7 +3,9 @@
     <div class="row">
       <div class="col-12 d-flex justify-content-md-end justify-content-center">
         <div class="d-flex flex-column align-self-end mb-2">
-          <h3 class="sss-header">SSS</h3>
+          <h3 class="sss-header">
+            {{ $t("faq.title") }}
+          </h3>
           <span class="line"></span>
         </div>
       </div>

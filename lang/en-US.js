@@ -25,6 +25,7 @@ export default async () => {
       infoMail: "info@kucukaslantekstil.com"
     },
     faq: {
+      title: "FAQ",
       benefits: "What is the benefits of thermal underwear?",
       benAnswer: [
         "Thermal underwear is a two-piece garment that is worn as a bottom and top to keep the body warm in wind, fog, sleet or harsh snow. This garment is normally long to the feet and long sleeved to the ankles and is worn by direct skin contact. It traps body heat to provide warmth to the body. The two pieces of the thermal suit are independent of each other, so you can choose to wear the top or bottom as per need",

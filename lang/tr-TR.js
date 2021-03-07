@@ -24,6 +24,7 @@ export default async () => {
       infoMail: "bilgi@kucukaslantekstil.com"
     },
     faq: {
+      title: "SSS",
       benefits: "Termal iç giyimin faydaları nelerdir?",
       benAnswer: [
         "Termal iç çamaşırı, rüzgâr, sis, karla karışık yağmur veya karlı sert havalarda vücudu sıcak tutmak için alt ve üst olarak giyilen iki parçalı giysidir. Bu kıyafet normalde ayaklara kadar uzun ve bileklere kadar uzun kolludur ve direkt cilde temas edilerek giyilir. Vücuda sıcaklık sağlamak için vücut ısısını hapseder. Termal giysinin iki parçası birbirinden bağımsız olduğundan, ihtiyaca göre üst veya alt kısmı giymeyi seçebilirsiniz.",
