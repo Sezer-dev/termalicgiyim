@@ -34,6 +34,7 @@
 
 <script>
 export default {
+  name: "Products",
   data() {
     return {
       slides: [

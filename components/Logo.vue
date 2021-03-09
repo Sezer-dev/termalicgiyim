@@ -14,6 +14,12 @@
   </NuxtLink>
 </template>
 
+<script>
+export default {
+  name: "Logo"
+};
+</script>
+
 <style scoped>
 .logo img {
   width: auto;

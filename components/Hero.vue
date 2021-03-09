@@ -23,6 +23,12 @@
   </main>
 </template>
 
+<script>
+export default {
+  name: "Hero"
+};
+</script>
+
 <style scoped>
 .hero {
   background-image: url("https://termalicgiyim.com/_nuxt/img/hero-bg.e8b7ae7.svg") !important;
