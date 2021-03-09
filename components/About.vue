@@ -23,7 +23,7 @@
         class="col-md-9 col-12 order-md-2 order-1 h-100 d-flex flex-column justify-content-center"
       >
         <p class="d-flex align-self-end w-md-100 w-75 about-p">
-          {{ this.$t("aboutus.text") }}
+          {{ $t("aboutus.text") }}
         </p>
       </div>
     </div>
